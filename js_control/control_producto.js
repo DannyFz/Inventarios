@@ -400,7 +400,7 @@ $(document).on('click', '.total_product', function(){
   let precio =$(this).attr("precio")
   let a = $("#cnt_"+id).val();
   let b = $("#P"+precio).val();
- alert(b*a);
+ alert(b+a);
  console.log(id);
 });
 //TERMINA ACTUALIZAR PRECIO PRODUCTO
