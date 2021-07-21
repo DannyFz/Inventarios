@@ -392,6 +392,17 @@ $(document).on('click', '.ver_almacen', function(){
  });
 //TERMINA VER ALMACEN
 
+//FUNCION NUEVO TOTAL
+
+function Nuevo_total(){
+ var total = 0;
+  $("td.c_total").each(function(){
+    total += parseInt($(this).text());
+    })
+  $('#total').val(total);
+}
+
+//termina funcion nuevo total
 
 //ACTUALIZAR PRECIO PRODUCTO
 $(document).on('click', '.total_product', function(){
@@ -406,6 +417,8 @@ $(document).on('click', '.total_product', function(){
   //alert(a*b);
   c = a*b;
   d = total + c;
+  $("#total" + id).html(c);
+  Nuevo_total();
   //8alert(d);
   //$("#total"+id).val(d);
   //$("#total").val(d);

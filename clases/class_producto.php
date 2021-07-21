@@ -96,7 +96,7 @@
                 	<td>".$fila["nombre"]."</td>
                 	<td><input type='number' id='cnt_".$lid."' codigo=".$coprod." value=".$cantidad." class='n_cant' onkeydown='return false'></td>
                 	<td><input type='text' id='P".$lid."' codigo=".$coprod." value=".$a." class='' onkeydown='return false'></td>
-					<td class='c_total'>".$b."</td>
+					<td id='total".$lid."' class='c_total'>".$b."</td>
                 	<td><a href='#' class='cancelar_prod' precio=".$b." id=".$lid.">X</a></td>
 					<td><a href='#' id=".$lid." class='total_product btn'>Actualizar</a></td>
               		</tr>";
