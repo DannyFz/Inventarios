@@ -95,12 +95,13 @@
 					echo "<tr id=".$lid.">
                 	<td>".$fila["nombre"]."</td>
                 	<td><input type='number' id='cnt_".$lid."' codigo=".$coprod." value=".$cantidad." class='n_cant' onkeydown='return false'></td>
-                	<td>".$fila["precio"]."</td>
-                	<td class='c_total'>".$b."</td>
+                	<td><input type='text' id='P".$lid."' codigo=".$coprod." value=".$a." class='' onkeydown='return false'></td>
+					<td class='c_total'>".$b."</td>
                 	<td><a href='#' class='cancelar_prod' precio=".$b." id=".$lid.">X</a></td>
 					<td><a href='#' id=".$lid." class='total_product btn'>Actualizar</a></td>
               		</tr>";
 					  
+					 
 				}		
 				else{
 					echo "clear";
@@ -111,7 +112,7 @@
 
 		//FUNCIÓN PARA OBTENER PRODUCTO PARA VENTA
 		function actualizar_producto($id,$cantidad,$codigo){
-			require_once "../db_config.php"; 
+			require_once "../db_config.php";
 				$stmt2=$db_con->prepare("UPDATE lista_producto SET cantidad = '$cantidad' WHERE id = '$id'");
 					$stmt2->execute();
 					

@@ -396,12 +396,21 @@ $(document).on('click', '.ver_almacen', function(){
 //ACTUALIZAR PRECIO PRODUCTO
 $(document).on('click', '.total_product', function(){
   //alert('Soy una alerta');
-  let id   = $(this).attr("id");
-  let precio =$(this).attr("precio")
+  let id     = $(this).attr("id");
   let a = $("#cnt_"+id).val();
-  let b = $("#P"+precio).val();
- alert(b+a);
- console.log(id);
+  let b = $("#P"+id).val();
+  let t = $("#total"+id).val();
+  var total = $('#total').val();
+  let c ;
+  let d ;
+  //alert(a*b);
+  c = a*b;
+  d = total + c;
+  //8alert(d);
+  //$("#total"+id).val(d);
+  //$("#total").val(d);
+  //parseInt($(this).text());
+  //console.log(id);
 });
 //TERMINA ACTUALIZAR PRECIO PRODUCTO
 
