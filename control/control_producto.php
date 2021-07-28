@@ -120,6 +120,7 @@ switch ($metodo) {
                   $producto->ver_almacen($id);
           
                   break;
+
 }
 
 ?>

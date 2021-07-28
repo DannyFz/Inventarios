@@ -91,6 +91,7 @@
 					$fila2=$stmt3->fetch(PDO::FETCH_ASSOC);
 					$lid=$fila2["id"];
 					$coprod=$fila2["codigo"];
+					
 
 					echo "<tr id=".$lid.">
                 	<td>".$fila["nombre"]."</td>

@@ -407,10 +407,10 @@ function Nuevo_total(){
 //ACTUALIZAR PRECIO PRODUCTO
 $(document).on('click', '.total_product', function(){
   //alert('Soy una alerta');
-  let id     = $(this).attr("id");
-  let a = $("#cnt_"+id).val();
-  let b = $("#P"+id).val();
-  let t = $("#total"+id).val();
+  let id    = $(this).attr("id");
+  let a     = $("#cnt_"+id).val();
+  let b     = $("#P"+id).val();
+  let t     = $("#total"+id).val();
   var total = $('#total').val();
   let c ;
   let d ;
@@ -419,6 +419,8 @@ $(document).on('click', '.total_product', function(){
   d = total + c;
   $("#total" + id).html(c);
   Nuevo_total();
+
+  
   //8alert(d);
   //$("#total"+id).val(d);
   //$("#total").val(d);
