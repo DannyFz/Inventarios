@@ -100,6 +100,7 @@
 					<td id='total".$lid."' class='c_total'>".$b."</td>
                 	<td><a href='#' class='cancelar_prod' precio=".$b." id=".$lid.">X</a></td>
 					<td><a href='#' id=".$lid." class='total_product btn'>Actualizar</a></td>
+					<a>a<a/>
               		</tr>";
 					  
 					 
